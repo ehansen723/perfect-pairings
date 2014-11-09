@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+/*                                        
+              EEEEEEEEEEE               
+          EEEEEEEEEEEEEEEEE             
+        EEEEEEE       EEEEEE           
+      EEEEEEEE         EEEEEE           
+      EEEEEEE            EEE           
+     EEEEEEEE             
+     EEEEEEE          Emma Hansen                      
+      EEEEEEE
+       EEEEEEE                    EEEE
+          EEEEEEEE                 EEEE 
+      EEEEEEEEEEEE    EEEEEEEEEEEEEEEE  
+    EEEEEE          EEEEEEEEEEEEEEEEE   
+  EEEEEEE          EEEE   EEEEEEEE
+ EEEEEEEE         EEEE       EEE
+ EEEEEEEE         EEEEEE      EE
+EEEEEEEEE          EEEEE      EEE
+ EEEEEEEE                     EE
+ EEEEEEEEE      2014       EEEE
+  EEEEEEEEE                EEEE
+   EEEEEEEEEE           EEEEE
+     EEEEEEEEEEEEEEEEEEEEEE
+        EEEEEEEEEEEEEEEE
+*/		
+/******************************            STRUCTURE          *********************************/
+/*========  GLOBAL &  OVERRIDES  ========*/
+html, body {overflow-x:hidden}
+.inner-wrapper, .content_area {width:100%;max-width:960px}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.anchor {display: block;position:relative;top:-130px;visibility:hidden}
+/*========  INTRO BANNER  ========*/
+.pg-banner {
+	padding: 90px 10%;
+	min-height:220px;
+	background-size:cover;
+}
+	.pairings {background-image: url('../img/intro.jpg')}
+	@media screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.3){
+	/*.pairings {background-image: url('../img/intro@2x.jpg')}*/
+	}
+.pg-banner .block {width:45%;}
+/*========  FEATURE NAV  ========*/
+.feature {
+	position:relative;
+	padding:2em 0;
+	margin-bottom:40px;
+	border-bottom:1px solid #bcbcbc;
+	background:rgba(255,255,255,0.9);
+	font: 10px/1 "Futura W01 Book"!important;
+	letter-spacing:2px;
+	text-transform:uppercase!important;
+	color:#808080
+}
+	.no-rgba .feature {background:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF); zoom: 1;}
+.feature ul {
+	width:100%;
+	max-width:960px;
+	margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.feature ul li:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.feature ul li {
+    display: inline-block;
+    position: relative;
+	padding:0 2em
+}
+.sticky {position:fixed;left:0;top:0;width:100%;margin:0;z-index:100}
+#toTop {
+    display:inline-block;
+    position: fixed;
+    bottom: -1px;
+    right: 30px;
+	padding:0.75em 2em;
+	background:rgba(255,255,255,0.9);
+	border:1px solid;
+	font: 10px/1 "Futura W01 Book"!important;
+	letter-spacing:2px;
+	text-transform:uppercase!important;
+	color:#999
+}
+	.no-rgba #toTop {background:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF); zoom: 1;}
+
+/*========  GRID  ========*/
+.subcat_grid .type {margin-bottom:80px;}
+.subcat_grid .full-div {border-bottom:1px solid #bcbcbc;margin:0 -500% 80px}
+.subcat_grid .block {position:relative;float:left;overflow:hidden;width:25.33%;height:345px;padding:2% 4%;text-align:center}
+.subcat_grid .block img {max-width:100%}
+.subcat_grid .block .tip {position:absolute;right:1.5em;top:1.5em;width:130px;font:italic 16px/1.7 "Garamond W01"}	
+.subcat_grid .mobile {display:none}
+.subcat_grid .intro, .subcat_grid .styled {width:calc(25.33% - 2px);background-position:50% 0;background-repeat:no-repeat;background-size:cover;border:1px solid #c7c6c6}
+	.no-csscalc .subcat_grid .intro, .subcat_grid .styled {width:25%}
+	.basic .intro {background-image: url('../img/basic_intro.jpg')}
+	.basic .styled {background-image: url('../img/basic_styled1.jpg')}
+	.basic .mobile {background-image: url('../img/basic_styled2.jpg')}
+	.bright .intro {background-image: url('../img/bright_intro.jpg')}
+	.bright .styled {background-image: url('../img/bright_styled1.jpg')}
+	.bright .mobile {background-image: url('../img/bright_styled2.jpg')}
+	.bold .intro {background-image: url('../img/bold_intro.jpg')}
+	.bold .styled {background-image: url('../img/bold_styled1.jpg')}
+	.bold .mobile {background-image: url('../img/bold_styled2.jpg')}
+	@media screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.3){
+	.basic .intro {background-image: url('../img/basic_intro@2x.jpg')}
+	.basic .styled {background-image: url('../img/basic_styled1@2x.jpg')}
+	.basic .mobile {background-image: url('../img/basic_styled2@2x.jpg')}
+	.bright .intro {background-image: url('../img/bright_intro@2x.jpg')}
+	.bright .styled {background-image: url('../img/bright_styled1@2x.jpg')}
+	.bright .mobile {background-image: url('../img/bright_styled2@2x.jpg')}
+	.bold .intro {background-image: url('../img/bold_intro@2x.jpg')}
+	.bold .styled {background-image: url('../img/bold_styled1@2x.jpg')}
+	.bold .mobile {background-image: url('../img/bold_styled2@2x.jpg')}
+	}
+.subcat_grid .prod .cta-wrap {position:absolute;bottom:18px;left:0;right:0}	
+
+/******************************              TYPE          ***********************************/
+/*========  GLOBAL  ========*/
+.cta {
+    display:inline-block;
+	padding:0.75em 2em;
+	border:1px solid;
+	font: 10px/1 "Futura W01 Book"!important;
+	letter-spacing:2px;
+	text-transform:uppercase!important
+}
+/*========  FEATURE NAV  ========*/
+.feature .choose {
+	font-family: "Garamond W01";
+	text-transform:none;
+	font-size: 14px;
+	letter-spacing: 0.4px;
+	font-style:italic;
+}
+/*========  INTRO BANNER  ========*/
+.pg-banner * {color:#FFF;text-align:center;font-family: "Garamond W01";text-transform:none}
+.pg-banner .prehead {
+	display:inline-block;
+	width:50%;
+	padding: 0 0 0.15em;
+	margin-top:0;
+	border-bottom:1px solid;
+	font-size: 18px;
+	letter-spacing: 0.4px;
+	font-style:italic;
+}
+.pg-banner h1 {
+	width:auto;
+	padding-top:0;
+	font-size: 47px;
+	line-height:1;
+	letter-spacing: 0.4px;
+}
+.pg-banner .intro {
+	margin-top:0.5em;
+	font-family: "Garamond W01";
+	font-size: 18px;
+	line-height:1.2;
+	letter-spacing: 0.4px;
+}
+/*========  GRID  ========*/
+.subcat_grid .intro h2 {
+    position: absolute;
+	width:100%;
+    height: 1em;
+    top:55%;bottom:0;left:0;right:0;
+    margin: auto;
+	font-family: "Futura W01 Book"!important;
+    font-size: 24px;
+	letter-spacing:3px;
+	text-transform:uppercase!important
+}
+	.subcat_grid .bold .intro h2,
+	.subcat_grid .bright .intro h2 {color:#FFF;text-shadow:1px 1px 3px rgba(100, 100, 100, 0.65)}
+.subcat_grid .intro h2 span {
+	border-bottom:1px solid;
+	padding:0.25em 0.5em;
+	white-space: nowrap;
+}
+.subcat_grid .txt p {
+	display:table;
+	height:300px;
+    font: 18px/1.7 "Garamond W01",Garamond,serif;
+    margin: 0 0 20px;
+	color:#787878
+}
+.subcat_grid .txt p span {
+	display:table-cell;
+	vertical-align:middle;
+}
+.subcat_grid .prod .title {
+    color: #787878;
+    letter-spacing: 1px;
+    text-align: center;
+	margin-bottom:18px;
+	text-transform:uppercase
+}
+.subcat_grid .prod .tip {
+    font: italic 18px/1.7 "Garamond W01",Garamond,serif;
+}
+
+@media screen and (max-width: 480px) {
+	.pg-banner {border-bottom:1px solid #bcbcbc;padding:5% 10%}
+	.pg-banner .block {width:90%;margin:auto}
+		.pairings {background:#FFF}
+	.pg-banner * {color:#787878}
+	.feature ul li {padding: 0 1em}
+	.feature .choose {display:none}
+	.sticky {top:41px}
+	.subcat_grid .block {width:42%;padding:4%;height:250px;margin-bottom:20px}
+	.subcat_grid .intro, .subcat_grid .styled {width:calc(42% - 2px);height:248px}
+		.no-csscalc .subcat_grid .intro, .subcat_grid .styled {width:41.9%;height:248px}
+	.subcat_grid .mobile {display:block}
+	.subcat_grid .styled img, .subcat_grid .intro img {max-width:none;width:160%;margin-left:-30%}
+	.subcat_grid .txt p {height:auto;font-size:14px}
+	.subcat_grid .intro h2 {font-size:16px}
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+	.pg-banner .block {width:60%}
+	.subcat_grid .block {height:285px}
+	.subcat_grid .txt p {height:auto}
+}
+@media screen and (max-width: 960px) {
+	.sticky {top:41px}
+}
