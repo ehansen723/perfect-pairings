@@ -24,7 +24,7 @@
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 
 /* Arrows */
-.slick-prev, .slick-next { position: absolute; display: block; height: 400px; width: 16px; padding:0 30px; line-height: 0; font-size: 0; cursor: pointer; color: transparent; top: 0; margin-top: -10px; border: none; outline: none; opacity:0; transition: all 0.2s ease-in-out 0s}
+.slick-prev, .slick-next { position: absolute; display: block; height: 400px; width: 16px; padding:0 30px; line-height: 0; font-size: 0; cursor: pointer; color: transparent; top: 0; margin-top: -10px; border: none; outline: none; opacity:0.25; transition: all 0.2s ease-in-out 0s}
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
 
 .slick-prev {left: 0; background:url("../store/gallery-arrow-prev.png")  50% 50% no-repeat }

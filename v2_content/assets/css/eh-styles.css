@@ -49,7 +49,7 @@ html, body {overflow-x:hidden}
 	.bright .pg-banner {background-image: url('../img/bright.jpg')}
 	.bold .pg-banner {background-image: url('../img/bold.jpg')}
 .intro .pg-banner .block {width:45%;}
-/*========  TO TOP  ========*/
+/*========  NAVIGATION  ========*/
 #toTop {
     display:inline-block;
     position: fixed;
@@ -64,6 +64,7 @@ html, body {overflow-x:hidden}
 	color:#999
 }
 	.no-rgba #toTop {background:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF); zoom: 1;}
+.next-cta {text-align:center}
 
 /*========  MAIN CONTENT  ========*/
 .pg-content {padding: 40px 0}
@@ -78,12 +79,14 @@ html, body {overflow-x:hidden}
 .pg-content .col {
 	float:left;
 	width:calc(50% - 20px);
-	padding-right:40px;
+	padding-right:19px;
+	margin-right:20px;
+	border-right:1px solid #c7c6c6;
 }
 	.no-csscalc .pg-content .col {width:47.9%}
-.pg-content .col:last-child {padding:0}
+.pg-content .col:last-child {padding:0;margin:0;border:none}
 /*========  GRID  ========*/
-.subcat_grid .type {margin-bottom:80px;}
+.subcat_grid .type {margin-bottom:40px;}
 .subcat_grid .block {position:relative;float:left;overflow:hidden;width:25.33%;height:345px;padding:2% 4%;text-align:center}
 .subcat_grid .block img {max-width:100%}
 .subcat_grid .mobile {display:none}
@@ -151,6 +154,13 @@ html, body {overflow-x:hidden}
     font-size: 20px;
     text-transform: none;
 }
+.content_area h2 {
+	color: #595959;
+	font: 13px/1 "Futura W01 Book",Futura,sans-serif;
+	letter-spacing: 0.1em;
+	text-align: left;
+	text-transform: uppercase;
+}
 .pg-content p {
     color: #808080;
     font-family: "Garamond W01";
@@ -163,13 +173,8 @@ html, body {overflow-x:hidden}
 .subcat_grid h2 {
 	border:1px solid #c7c6c6;
 	border-width: 1px 0;
-	margin: 0;
 	padding: 15px 0;
-	color: #595959;
-	font: 13px/1 "Futura W01 Book",Futura,sans-serif;
-	letter-spacing: 0.1em;
-	text-align: left;
-	text-transform: uppercase;
+	margin: 0;
 }
 .subcat_grid .prod .title {
     color: #787878;
@@ -194,8 +199,7 @@ html, body {overflow-x:hidden}
 		   -moz-column-gap: 0;
 		        column-gap: 0;
 	}
-	.pg-content .col,
-	.no-csscalc {width:100%;padding-right:0}
+	.pg-content .col {width:100%;padding-right:0;border:none}
 	.subcat_grid .block {width:42%;padding:4%;height:250px;margin-bottom:20px}
 	.subcat_grid .txt p {height:auto;font-size:14px}
 	.subcat_grid .intro h2 {font-size:16px}
